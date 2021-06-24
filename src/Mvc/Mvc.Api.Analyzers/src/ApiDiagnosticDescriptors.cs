@@ -11,7 +11,7 @@ namespace Microsoft.AspNetCore.Mvc.Api.Analyzers
         public static readonly DiagnosticDescriptor API1000_ActionReturnsUndocumentedStatusCode =
             new DiagnosticDescriptor(
                 "API1000",
-                "Action returns undeclared status code.",
+                "Action returns undeclared status code",
                 "Action method returns undeclared status code '{0}'.",
                 "Usage",
                 DiagnosticSeverity.Warning,
@@ -20,7 +20,7 @@ namespace Microsoft.AspNetCore.Mvc.Api.Analyzers
         public static readonly DiagnosticDescriptor API1001_ActionReturnsUndocumentedSuccessResult =
             new DiagnosticDescriptor(
                 "API1001",
-                "Action returns undeclared success result.",
+                "Action returns undeclared success result",
                 "Action method returns a success result without a corresponding ProducesResponseType.",
                 "Usage",
                 DiagnosticSeverity.Warning,
@@ -29,7 +29,7 @@ namespace Microsoft.AspNetCore.Mvc.Api.Analyzers
         public static readonly DiagnosticDescriptor API1002_ActionDoesNotReturnDocumentedStatusCode =
             new DiagnosticDescriptor(
                 "API1002",
-                "Action documents status code that is not returned.",
+                "Action documents status code that is not returned",
                 "Action method documents status code '{0}' without a corresponding return type.",
                 "Usage",
                 DiagnosticSeverity.Info,
@@ -38,7 +38,7 @@ namespace Microsoft.AspNetCore.Mvc.Api.Analyzers
         public static readonly DiagnosticDescriptor API1003_ApiActionsDoNotRequireExplicitModelValidationCheck =
             new DiagnosticDescriptor(
                 "API1003",
-                "Action methods on ApiController instances do not require explicit model validation check.",
+                "Action methods on ApiController instances do not require explicit model validation check",
                 "Action methods on ApiController instances do not require explicit model validation check.",
                 "Usage",
                 DiagnosticSeverity.Info,
