@@ -52,10 +52,6 @@
     <Content Include="build\$(DefaultNetCoreTargetFramework)\*.props" Pack="true" PackagePath="build\$(DefaultNetCoreTargetFramework)\" />
   </ItemGroup>
 
-  <ItemGroup>
-    <EmbeddedResource Include="Properties\ILLink.Substitutions.xml" LogicalName="ILLink.Substitutions.xml" />
-  </ItemGroup>
-
   <!-- blazor.webassembly.js should exist after Microsoft.AspNetCore.Components.Web.JS.npmproj builds. -->
   <Target Name="_CheckBlazorServerJSPath" BeforeTargets="GenerateNuspec" DependsOnTargets="ResolveProjectReferences" Condition=" '$(IsPackable)' == 'true' ">
     <Error Text="'$(BlazorWebAssemblyJSFile)' does not exist. Enable NodeJS to pack this project." Condition=" !EXISTS('$(BlazorWebAssemblyJSFile)') " />
